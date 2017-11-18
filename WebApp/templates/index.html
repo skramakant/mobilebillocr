@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+
+    <title>Python Flask Bucket List App</title> 
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  	<style type="text/css">
+  		th, td {
+   				padding: 15px;
+   				 text-align: left;
+			}
+  	</style>
+</head>
+ 
+<body style="overflow: scroll;">
+	<div class="container">
+<!--   		<div class="alert alert-info">
+  			<h2>Opencv OCR </h2>
+  			<h4>Please find the extrected text corrosponding to each image!</h4>
+  		</div>
+		<table class="table-bordered">
+			<thead>
+				<tr>
+					<th>Path</th>
+					<th>Description</th>
+					<th>Name</th>
+				</tr>
+			</thead>
+			<tbody>
+					{% for d in final_result %}
+						<tr>
+							<td><img src={{d.imagePath}} class="img-responsive"></td>
+							<td>{{ d.imageData }}</td>
+							<td>{{ d.imageName }}</td>
+						</tr>
+					{% endfor %}
+			</tbody>
+		</table>
+ -->
+
+		<div class="panel panel-default">
+  			<div class="panel-heading">
+  				<h2>Opencv OCR </h2>
+  				<h4>Please find the extrected text corrosponding to each image!</h4>
+  			</div>
+ 			<div>
+	 			<table class="table-bordered">
+					<thead>
+						<tr>
+							<th>Path</th>
+							<th>Description</th>
+							<th>Name</th>
+						</tr>
+					</thead>
+					<tbody>
+							{% for d in final_result %}
+								<tr>
+									<td><img src={{d.imagePath}} class="img-responsive"></td>
+									<td>{{ d.imageData }}</td>
+									<td>{{ d.imageName }}</td>
+								</tr>
+							{% endfor %}
+					</tbody>
+				</table>
+ 			 </div>
+		</div>
+
+	</div>
+
+</body>
+ 
+</html>
+
